@@ -1,6 +1,8 @@
 package academy.tochkavhoda.introduction;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -190,7 +192,7 @@ public class TestZeroSteps3 {
         int[] array5 = {};
         assertFalse(zeroSteps3.allPositive(array5));
     }
-/**
+
     @Test
     public void testAllEqual() {
         ZeroSteps3 zeroSteps3 = new ZeroSteps3();
@@ -341,6 +343,6 @@ public class TestZeroSteps3 {
         double[] array22 = {};
         assertEquals(0, zeroSteps3.scalarProduct(array12, array22));
     }
-**/
+
 }
 
