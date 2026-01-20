@@ -16,14 +16,10 @@ public class ZeroSteps1 {
         return x % y;
     }
     public boolean isEqual (int x, int y){
-        if(x == y) {
-            return true;
-        }else{
-            return false;
-        }
+        return x == y;
     }
     public boolean isGreater (int x, int y){
-        if(x > y){
+        if(y < x){
             return true;
         }else{
             return false;
@@ -44,7 +40,7 @@ public class ZeroSteps1 {
         return c * 100 + b * 10 + a;
     }
     public long calculate15Degree(int number){
-        long n2 = number * number;
+        long n2 = (long) number * number;
         long n4 = n2 * n2;
         long n8 = n4 * n4;
         long n16 = n8 * n8;
@@ -52,9 +48,8 @@ public class ZeroSteps1 {
         return n16 / number;
     }
     public boolean isInsideRect(int xLeft, int yTop, int xRight, int yBottom, int x, int y){
-        if( xLeft <= x && x <= xRight && yTop <= y && y <= yBottom){
-            return true;
-        }else{
+        if( xLeft <= x && x <= xRight && yTop <= y && y <= yBottom) return true;
+        else{
             return false;
         }
     }
@@ -62,11 +57,7 @@ public class ZeroSteps1 {
         return Math.sqrt(Math.abs(number));
     }
     public boolean isTriangleExist(int side1, int side2, int side3){
-        if(side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side2){
-            return true;
-        }else{
-            return false;
-        }
+        return side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side2;
 
     }
     public int getDigitsProduction(int number) {
