@@ -1,9 +1,13 @@
 package academy.tochkavhoda.introduction;
 
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 
+@Nested
 class TestZeroSteps1 {
 
     private static final double DOUBLE_EPS = 1E-6;
@@ -21,7 +25,7 @@ class TestZeroSteps1 {
         assertEquals(4, zeroSteps1.mul(2, 2));
         assertEquals(100000000, zeroSteps1.mul(10000, 10000));
     }
-/*
+
     @Test
     public void testDiv() {
         ZeroSteps1 zeroSteps1 = new ZeroSteps1();
@@ -131,6 +135,7 @@ class TestZeroSteps1 {
         assertFalse(zeroSteps1.isCircleInsideSquare(4, 2));
     }
 
+
     @Test
     public void testGetCharByCode() {
         ZeroSteps1 zeroSteps1 = new ZeroSteps1();
@@ -176,6 +181,4 @@ class TestZeroSteps1 {
         assertEquals('m', zeroSteps1.getAverageChar('a', 'z'));
         assertEquals('п', zeroSteps1.getAverageChar('а', 'я'));
     }
-
- */
 }
