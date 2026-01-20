@@ -19,11 +19,7 @@ public class ZeroSteps1 {
         return x == y;
     }
     public boolean isGreater (int x, int y){
-        if(y < x){
-            return true;
-        }else{
-            return false;
-        }
+        return y < x;
     }
     public double calculateTriangleSquare(int side1, int side2){
         return (side1 * side2) /2.0;
@@ -48,10 +44,7 @@ public class ZeroSteps1 {
         return n16 / number;
     }
     public boolean isInsideRect(int xLeft, int yTop, int xRight, int yBottom, int x, int y){
-        if( xLeft <= x && x <= xRight && yTop <= y && y <= yBottom) return true;
-        else{
-            return false;
-        }
+        return xLeft <= x && x <= xRight && yTop <= y && y <= yBottom;
     }
     public double sqrtAbs(int number) {
         return Math.sqrt(Math.abs(number));
