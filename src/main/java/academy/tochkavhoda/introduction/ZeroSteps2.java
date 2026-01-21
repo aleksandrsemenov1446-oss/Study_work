@@ -149,7 +149,8 @@ public class ZeroSteps2 {
         Random rand = new Random();
         int k = 0;
         double radius = length / 2.0;
-        double center = radius;
+        double center;
+        center = radius;
         for (int i = 0; i < count; i++) {
             double x = rand.nextDouble() * length;
             double y = rand.nextDouble() * length;
