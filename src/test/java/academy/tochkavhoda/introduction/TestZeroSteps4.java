@@ -87,7 +87,7 @@ public class TestZeroSteps4 {
         int[][] matrix3 = {{3}};
         assertTrue(zeroSteps4.isSymmetric(matrix3));
     }
-/*
+
     @Test
     public void testMainDiagonalMax() {
         ZeroSteps4 zeroSteps4 = new ZeroSteps4();
@@ -218,6 +218,4 @@ public class TestZeroSteps4 {
         assertEquals(8,zeroSteps4.sumUntilNotFound(matrix, 12));
         assertEquals(23,zeroSteps4.sumUntilNotFound(matrix, 4));
     }
-
- */
 }
