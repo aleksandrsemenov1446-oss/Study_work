@@ -96,6 +96,7 @@ public class ZeroSteps4 {
     }
     public boolean isSymmetric(int[][] matrix){
         if (matrix == null || matrix.length == 0) return true;
+
         return false;
     }
 }
